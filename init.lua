@@ -575,5 +575,15 @@ vim.keymap.set('i', '<C-J>', 'copilot#Accept("<CR>")', {
 vim.g.copilot_no_tab_map = true
 vim.g.copilot_filetypes = {markdown = true}
 
+
+if vim.g.neovide then
+  -- Put anything you want to happen only in Neovide here
+
+  --vim.o.guifont = "d2coding:h12"
+  vim.o.guifont = "semteulche:h12"
+  vim.o.title = true
+end
+
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
